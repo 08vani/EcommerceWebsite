@@ -1,0 +1,231 @@
+body
+{
+	font-size :20px;
+	background-color: #7f5a83;
+	background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%); 
+	color: #fff;
+}
+
+.nav-item
+{
+	margin-left: 70px;
+	margin-right: 50px;
+
+}
+
+
+
+#mainContent
+{
+	top: 100px;
+}
+
+
+.jumbotron
+{
+	box-shadow: 0 0 50px #3F0C1F;
+	border: 2px solid;
+	background-color: #cc3399;
+	border: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+
+#menu-categories-title
+{
+	margin:20px;
+	color: #fff;
+}
+
+
+
+.category-tile {
+	
+	position: relative;
+	overflow: hidden;
+	/* below is the trick to centre pic without mentioning centre */
+	/*width: 200px;*/
+	height: 200px;
+	margin: 0 auto 15px;
+}
+.category-tile img{
+
+	border:2px solid #3F0C1F; 
+	width: 100%;
+
+	}
+
+.category-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase; 
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+.category-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+	margin-bottom: 50px;
+}
+
+
+.menu-item-photo {
+	position: relative;
+	overflow: hidden;
+	left: 20%;
+	bottom: 50px;
+	top: 10px;
+}
+
+#CustomerOptButtons
+{
+	top: 30px;
+	left: 0px;
+}
+
+#CustomerOptButtons2
+{
+	top: 30px;
+	right: 10px;
+
+}
+
+#CustomerOptButtons3
+{
+	top: 30px;
+	right: 10px;
+
+}
+
+.row
+{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.Categories
+{
+	margin: 20px,0;
+
+}
+
+.col-3
+{
+	flex-basis: 30%;
+	min-width: 250px;
+	margin-bottom: 30px;
+	color: #fff;
+}
+
+.col-3 img
+{
+	width: 100%;
+	height: 200px;
+}
+
+.small-container
+{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.col-4
+{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+
+.col-4 img
+{
+	width: 100%;
+	height: 300px;
+
+}
+
+.tittle
+{
+	text-align: center;
+	margin: 0 auto 80px;
+	position: relative;
+	line-height: 60px;
+	color: #ffff;
+}
+.tittle::after
+{
+	content: '';
+	background: #ff523b;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+
+}
+
+h4
+{
+	color: #ffff;
+	font-weight: normal;
+}
+
+.col-4 p
+{
+	font-size: 14px;
+	color: #ffff;
+}
+
+.rating
+{
+	color: #ffff;
+}
+
+.col-4:hover
+{
+	transform: translateY(-20px);
+}
+
+
+/**************** Large devices only *******************/
+
+@media (min-width: 1200px)
+{
+
+
+
+}
+
+/*----------media query for less than 600 screen size -------*/
+
+@media only screen and (max-width: 600px)
+{
+	.row
+	{
+		align-items: center;
+	}
+
+	.col-2, .col-3,.col-4
+	{
+		flex-basis: 100%;
+	} 
+
+}
+
